@@ -1,0 +1,17 @@
+﻿<Page
+    x:Class="testYoutubeDownloader.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:testYoutubeDownloader"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBox Margin="15,10,1084,0" TextWrapping="Wrap" Text="download url:" VerticalAlignment="Top" Height="46" Width="181" FontSize="24" HorizontalAlignment="Center" MaxLength="4"/>
+        <Button Content="Download" HorizontalAlignment="Left" Margin="412,61,0,0" VerticalAlignment="Top" Height="96" Width="421" FontSize="36" Click="click"/>
+        <TextBox x:Name="downloadurl" HorizontalAlignment="Left" Margin="196,10,0,0" TextWrapping="Wrap" Text="www.youtube.com/example" VerticalAlignment="Top" Height="46" Width="1074" FontSize="24"/>
+        <ToggleSwitch x:Name="downloadType" Header="Download Type" HorizontalAlignment="Left" Margin="542,162,0,0" VerticalAlignment="Top" OffContent="Audio" OnContent="Video" IsOn="True"/>
+
+    </Grid>
+</Page>
